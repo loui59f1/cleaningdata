@@ -45,15 +45,15 @@ function prepareObjects(jsonData) {
     console.log(lastName);
     student.lastName = lastName;
 
-    // //Type
-    // let animalType = animalData[3];
-    // console.log(animalType);
-    // animal.type = animalType;
+    //Gender
+    let gender = studentData[5];
+    console.log(gender);
+    student.gender = gender;
 
-    // //Age
-    // let animalAge = jsonObject.age;
-    // console.log(animalAge);
-    // animal.age = animalAge;
+    //house
+    let house = studentData[6];
+    console.log(house);
+    student.house = house;
 
     // TODO: MISSING CODE HERE !!
     //Adding all the objects into the array
@@ -77,8 +77,8 @@ function displayStudent(student) {
 
   clone.querySelector("[data-field=firstname]").textContent = student.firstName;
   clone.querySelector("[data-field=lastname]").textContent = student.lastName;
-  //   clone.querySelector("[data-field=type]").textContent = animal.type;
-  //   clone.querySelector("[data-field=age]").textContent = animal.age;
+  clone.querySelector("[data-field=gender]").textContent = student.gender;
+  clone.querySelector("[data-field=house]").textContent = student.house;
 
   document.querySelector("#list tbody").appendChild(clone);
 }
